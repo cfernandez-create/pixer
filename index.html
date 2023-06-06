@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
+    <div class="heading__container"> </div>
     <main class="main">
+      
         <div class="settings">
+            <img class="logo" src="assets/my_pixel.png"/>
             <div class="paint-settings">
-        <span class="material-symbols-outlined">
-            brush
-            </span>
-        <input type="color" id="color-picker">
-    </div>
-    <div class="paint-settings">
-        <span class="material-symbols-outlined">
-            format_color_fill
-            </span>
-        <input type="color" id="fill-picker">
-       
-    </div>
-    <div class="size-settings">
-    <input type="range" id="slider" min="2" max="30" value="16">
-    <p><span id="sliderValue">16</span></p>
-</div>
-    <button id="clear-btn">Clear</button>
-    </div>
-   
-<div id="root" class="root"></div>
+                <span class="material-symbols-outlined">
+                    brush
+                </span>
+                <input type="color" id="color-picker">
+            </div>
+            <div class="paint-settings">
+                <span class="material-symbols-outlined">
+                    format_color_fill
+                </span>
+                <input type="color" id="fill-picker">
+
+            </div>
+            <div class="size-settings">
+                <input type="range" id="slider" min="2" max="50" value="16">
+                <p><span id="sliderValue">16 x 16</span></p>
+            </div>
+            <button id="clear-btn">Clear</button>
+            <button id="save-btn">Save</button>
+        </div>
+
+        <div id="root" class="root"></div>
     </main>
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
